@@ -22,11 +22,11 @@ plot(consumpsub$dateTime, consumpsub$Sub_metering_1, type = "l", ylim = range(0,
 #New overlay on previous
 par(new=T)
 plot(consumpsub$dateTime, consumpsub$Sub_metering_2, type = "l", ylim = range(0,40), ylab = "Energy sub metering",
-     col = "red")
+     col = "red",  xlab = "")
 #New overlay on previous
 par(new=T)
 plot(consumpsub$dateTime, consumpsub$Sub_metering_3, type = "l", ylim = range(0,40), ylab = "Energy sub metering",
-     col = "blue")
+     col = "blue",  xlab = "")
 #New overlay on previous
 legend("topright", lty = 1, legend = c("Sub_metering_1", "Sub_metering_2",  "Sub_metering_3"),
        col = c("black", "red", "blue"))
